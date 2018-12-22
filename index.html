@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css">
+    <link rel="stylesheet" href="node_modules/material-icons/iconfont/material-icons.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <title>Login & Register</title>
+</head>
+<body>
+<!--Login & Register Body Starts Here-->
+<div class="container">
+    <div class="row">
+        <div class="col  push-xl3 xl6 pull-xl3 l12 m12 s12">
+            <ul class="collapsible z-depth-3">
+                <li class="active">
+                    <div class=" collapsible-header center-align waves-effect waves-purple teal white-text"><i class="material-icons">vpn_key</i>ورود</div>
+                    <div class="collapsible-body white">
+                        <!--login form-->
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="username_login" type="text" class="validate">
+                                        <label for="username_login">نام کاربری</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">lock</i>
+                                        <input id="password_login" type="password" class="validate">
+                                        <label for="password_login">‍پسورد</label>
+                                    </div>
+                                    <div class="col s12 center">
+                                        <button class="btn waves-effect waves-light " type="submit" name="login">ورود
+                                            <i class="material-icons right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header waves-effect teal white-text waves-purple"><i class="material-icons">person_add</i>ثبت نام</div>
+                    <div class="collapsible-body white">
+                        <!--register form-->
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col m6 s12">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="username_register" type="text" class="validate">
+                                        <label for="username_register">نام کاربری</label>
+                                    </div>
+                                    <div class="input-field col m6 s12">
+                                        <i class="material-icons prefix">lock</i>
+                                        <input id="password_register" type="password" class="validate">
+                                        <label for="password_register">پسورد</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">person</i>
+                                        <input id="realname_register" type="text" >
+                                        <label for="realname_register">نام و نام خانوادگی ( به فارسی )</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">mail</i>
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">ایمیل</label>
+                                        <span class="helper-text" data-error="اشتباه است" data-success="درست">بررسی ایمیل</span>
+                                    </div>
+                                    <div class="col s12 center">
+                                        <button class="btn waves-effect waves-light " type="submit" name="register">ثبت نام
+                                            <i class="material-icons right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header waves-effect cyan white-text waves-teal"><i class="material-icons">help</i>راهنما</div>
+                    <div class="collapsible-body white black-text">
+                        <p class="text-accent-1 right-align">
+                            اگر برای اولین بار است که از این سامانه استفاده میکنید لطفا ابتدا عضو شوید سپس با نام کاربری و پسورد خود به سامانه ورود کنید.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--Login & Register Body Ends Here-->
+
+<script src="node_modules/materialize-css/dist/js/materialize.js"></script>
+<script>
+    M.AutoInit();
+</script>
+</body>
+</html>
