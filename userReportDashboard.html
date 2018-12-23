@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css">
+    <link rel="stylesheet" href="node_modules/material-icons/iconfont/material-icons.css">
+    <link rel="stylesheet" href="assets/css/fontiran.css">
+    <link rel="stylesheet" href="assets/css/userReportDashboard.css">
+    <title>user report dashboard</title>
+</head>
+<body>
+
+<!--nav starts-->
+<nav class=" nav-extended z-depth-3 teal lighten-1">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a class="brand-logo center" href="#">صبح دانشجو</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+                <li><a href="#">خروج</a></li>
+                <li><a href="#">خانه</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <a href="#" class="btn-floating btn-large halfway-fab teal">
+                <i class="material-icons">dashboard</i>
+            </a>
+        </div>
+    </div>
+</nav>
+<ul class="sidenav teal lighten-1 " id="mobile-nav">
+    <li><a class="white-text" href="#">خانه</a></li>
+    <li><a class="white-text" href="">خروج</a></li>
+</ul>
+<!--nav ends-->
+
+<!--main content starts-->
+<div class="container">
+    <div class="row">
+        <div class="col m12 s12">
+            <div class="user-report-dashboard-content white">
+                <table class="responsive-table highlight direction-right centered striped" dir="rtl">
+                    <thead>
+                    <tr>
+                        <th>عنوان برنامه</th>
+                        <th>تاریخ ارسال</th>
+                        <th>وضعیت</th>
+                        <th>عملیات</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>مسابقه ماهیانه احکام</td>
+                        <td>۱۳۹۷/۰۷/۰۱</td>
+                        <td>تایید شده</td>
+                        <td><a class="btn cyan white-text lighten-3 waves-effect" href=""> مشاهده / ویرایش</a></td>
+                    </tr>
+                    <tr>
+                        <td>مسابقه ماهیانه احکام</td>
+                        <td>۱۳۹۷/۰۷/۰۱</td>
+                        <td>تایید شده</td>
+                        <td><a class="btn cyan white-text lighten-3 waves-effect" href=""> مشاهده / ویرایش</a></td>
+                    </tr>
+                    <tr>
+                        <td>مسابقه ماهیانه احکام</td>
+                        <td>۱۳۹۷/۰۷/۰۱</td>
+                        <td>تایید شده</td>
+                        <td><a class="btn cyan white-text lighten-3 waves-effect" href=""> مشاهده / ویرایش</a></td>
+                    </tr>
+                    <tr>
+                        <td>مسابقه ماهیانه احکام</td>
+                        <td>۱۳۹۷/۰۷/۰۱</td>
+                        <td>تایید شده</td>
+                        <td><a class="btn cyan white-text lighten-3 waves-effect" href=""> مشاهده / ویرایش</a></td>
+                    </tr>
+                    <tr>
+                        <td>مسابقه ماهیانه احکام</td>
+                        <td>۱۳۹۷/۰۷/۰۱</td>
+                        <td>تایید شده</td>
+                        <td><a class="btn cyan white-text lighten-3 waves-effect" href=""> مشاهده / ویرایش</a></td>
+                    </tr>
+                    </tbody>
+
+                </table>
+                <ul class="pagination center ">
+                    <li class="disabled "><a href="#"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active cyan white-text lighten-3 "><a href="#">1</a></li>
+                    <li class="waves-effect"><a href="">2</a></li>
+                    <li class="waves-effect"><a href="">3</a></li>
+                    <li><a href=""><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--main content ends-->
+
+<div class="fixed-action-btn white-text ">
+    <a href="#" class="btn-floating btn-large pulse">
+        <i class="material-icons">mode_edit</i>
+    </a>
+</div>
+
+
+<script src="node_modules/materialize-css/dist/js/materialize.js"></script>
+<script>
+    M.AutoInit();
+
+</script>
+</body>
+</html>

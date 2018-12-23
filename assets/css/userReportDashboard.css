@@ -1,0 +1,12 @@
+body{
+    background: url("../img/background.jpg");
+    font-family: IRANSans, sans-serif;
+}
+.user-report-dashboard-content{
+    margin-top: 70px;
+    padding: 20px;
+}
+.image-round-border{
+    border: 5px solid #84dbff;
+    border-radius: 50%;
+}
