@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css">
+    <link rel="stylesheet" href="node_modules/material-icons/iconfont/material-icons.css">
+    <link rel="stylesheet" href="assets/css/fontiran.css">
+    <link rel="stylesheet" href="assets/css/userSendReport.css">
+    <title>user send report</title>
+</head>
+<body>
+
+<!--nav starts-->
+<nav class=" nav-extended z-depth-3 teal lighten-1">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a class="brand-logo center" href="#">صبح دانشجو</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+                <li><a href="#">خروج</a></li>
+                <li><a href="#">خانه</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <a href="#" class="btn-floating btn-large halfway-fab teal">
+                <i class="material-icons">send</i>
+            </a>
+        </div>
+    </div>
+</nav>
+<ul class="sidenav teal lighten-1 " id="mobile-nav">
+    <li><a class="white-text" href="#">خانه</a></li>
+    <li><a class="white-text" href="">خروج</a></li>
+</ul>
+<!--nav ends-->
+<!--content starts-->
+<div class="container">
+    <div class="row">
+        <form class="col s12 user-send-report-content white">
+            <div class="row">
+                <div class="input-field col m12 s12">
+                    <input id="program_title" type="text" class="validate">
+                    <label for="program_title">عنوان برنامه</label>
+                </div>
+                <div class="input-field col m6 s12">
+                    <input id="start_time" type="text" class="datepicker">
+                    <label for="start_time">تاریخ شروع</label>
+                </div>
+                <div class="input-field col m6 s12">
+                    <input id="finish_time" type="text" class="datepicker">
+                    <label for="finish_time">تاریخ شروع</label>
+                </div>
+                <div class="input-field col m6 s12">
+                    <select id="ejraye_rahbord1">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <label for="ejraye_rahbord1">در جهت اجرای راهبرد 1</label>
+                </div>
+
+                <div class="input-field col m6 s12">
+                    <select id="ejraye_barname_pishnahadi1">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <label for="ejraye_barname_pishnahadi1">در جهت اجرای برنامه ی پیشنهادی 1</label>
+                </div>
+                <div class="input-field col m6 s12">
+                    <select id="ejraye_rahbord2">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <label for="ejraye_rahbord2">در جهت اجرای راهبرد 2</label>
+                </div>
+
+                <div class="input-field col m6 s12">
+                    <select id="ejraye_barname_pishnahadi2">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <label for="ejraye_barname_pishnahadi2">در جهت اجرای برنامه ی پیشنهادی 2</label>
+                </div>
+                <div class="input-field col m6 s12">
+                    <p>حوزه موضوعی</p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>فرهنگی -تربیتی</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>سیاسی-تربیتی</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>پژوهشی - تربیتی</span>
+                        </label>
+                    </p>
+
+                </div>
+                <div class="input-field col m6 s12">
+                    <p>عنوان موضوع</p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>اخلاق</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>ازدواج و تشکیل خانواده</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>انقلاب اسلامی و ولایت فقیه</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>حمایت و نظارت</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>خانواده و زنان</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>سازماندهی</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>فضای مجازی</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>قران و عترت</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>کرسی ازاد اندیشی</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>مساپل روز سیاسی و بصیرت افزایی</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>مشاوره</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>نماز و مسجد</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>هنر و ادبیات</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"/>
+                            <span>سایر</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field col m12 s12">
+                    <input id="pishnahad_mozooi" type="text" class="validate">
+                    <label for="pishnahad_mozooi">پیشنهاد موضوعی</label>
+                </div>
+                <div class="input-field col m12 s12">
+                    <select multiple>
+                        <option value="" disabled selected>نوع مخاطب</option>
+                        <option value="1">عموم دانشجویان</option>
+                        <option value="2">اساتید</option>
+                        <option value="3">بسیج دانشجویی</option>
+                        <option value="4">هیات ها</option>
+                        <option value="5">ا‍‍ءمه جماعات</option>
+                        <option value="6">کارکنان دانشگاه</option>
+                        <option value="7">کارکنان نهاد</option>
+                        <option value="8">تشکل ها</option>
+                        <option value="9">انجمن های علمی</option>
+                        <option value="10">کانون ها</option>
+                        <option value="11">گروه های معارف</option>
+                        <option value="12">نشریات</option>
+                        <option value="13">سایر</option>
+                    </select>
+                    <label>نوع مخاطب</label>
+                    <!--TODO: make other checkboxes look like the above one-->
+                </div>
+                <div class="input-field col m4 s12">
+                    <input type="number" name="men_number" id="men_number" onchange="sumMenAndWo()">
+                    <label for="men_number">تعداد آقایان</label>
+                </div>
+                <div class="input-field col m4 s12">
+                    <input type="number" name="women_number" id="women_number" onchange="sumMenAndWo()">
+                    <label for="women_number">تعداد خانم ها</label>
+                </div>
+                <div class="input-field col m4 s12">
+                    <input disabled type="number" name="sum_men_and_women" id="sum_men_and_women">
+                    <label for="sum_men_and_women"></label>
+                </div>
+                <!--TODO: make other checkboxes look like the above one-->
+                <div class="input-field col m2 s12">
+                    <select>
+                        <option value="1">اجرا</option>
+                        <option value="2">اساتید</option>
+                        <option value="3">بسیج دانشجویی</option>
+                    </select>
+                    <label>نوع حضور</label>
+                </div>
+                <div class="input-field col m10 s12">
+                    <input id="mojri_asli_barname" type="text">
+                    <label for="mojri_asli_barname">مجری اصلی برنامه</label>
+                </div>
+
+                <div class="input-field col m10 s12">
+                    <input id="onvane_faaliate_ejraii_barname1" type="text">
+                    <label for="onvane_faaliate_ejraii_barname1">عنوان فعالیت اجرایی برنامه 1</label>
+                </div>
+                <div class="input-field col m2 s12">
+                    <select>
+                        <option value="1">امور اجرایی</option>
+                        <option value="2">اساتید</option>
+                        <option value="3">بسیج دانشجویی</option>
+                    </select>
+                    <label>قالب اجرای ۱</label>
+                </div>
+
+                <div class="input-field col m10 s12">
+                    <input id="onvane_faaliate_ejraii_barname2" type="text">
+                    <label for="onvane_faaliate_ejraii_barname2">عنوان فعالیت اجرایی برنامه 2</label>
+                </div>
+                <div class="input-field col m2 s12">
+                    <select>
+                        <option value="1">امور اجرایی</option>
+                        <option value="2">اساتید</option>
+                        <option value="3">بسیج دانشجویی</option>
+                    </select>
+                    <label>قالب اجرای ۲</label>
+                </div>
+
+                <div class="input-field col m10 s12">
+                    <input id="onvane_faaliate_ejraii_barname3" type="text">
+                    <label for="onvane_faaliate_ejraii_barname3">عنوان فعالیت اجرایی برنامه 3</label>
+                </div>
+                <div class="input-field col m2 s12">
+                    <select>
+                        <option value="1">امور اجرایی</option>
+                        <option value="2">اساتید</option>
+                        <option value="3">بسیج دانشجویی</option>
+                    </select>
+                    <label>قالب اجرای ۳</label>
+                </div>
+
+                <div class="input-field col m10 s12">
+                    <input id="onvane_faaliate_ejraii_barname4" type="text">
+                    <label for="onvane_faaliate_ejraii_barname4">عنوان فعالیت اجرایی برنامه 4</label>
+                </div>
+                <div class="input-field col m2 s12">
+                    <select>
+                        <option value="1">امور اجرایی</option>
+                        <option value="2">اساتید</option>
+                        <option value="3">بسیج دانشجویی</option>
+                    </select>
+                    <label>قالب اجرای ۴</label>
+                </div>
+
+                <div class="input-field col m10 s12">
+                    <input id="onvane_faaliate_ejraii_barname5" type="text">
+                    <label for="onvane_faaliate_ejraii_barname5">عنوان فعالیت اجرایی برنامه 5</label>
+                </div>
+                <div class="input-field col m2 s12">
+                    <select>
+                        <option value="1">امور اجرایی</option>
+                        <option value="2">اساتید</option>
+                        <option value="3">بسیج دانشجویی</option>
+                    </select>
+                    <label>قالب اجرای ۵</label>
+                </div>
+
+                <div class="input-field col m3 s12">
+                    <input id="hazine_az_nahad" type="number">
+                    <label for="hazine_az_nahad">هزینه از نهاد (ریال)</label>
+                </div>
+                <div class="input-field col m3 s12">
+                    <input id="hazine_az_daneshga" type="number">
+                    <label for="hazine_az_daneshga">هزینه از دانشگاه (ریال)</label>
+                </div>
+                <div class="input-field col m3 s12">
+                    <input id="hazine_az_sayere_marakez" type="number">
+                    <label for="hazine_az_sayere_marakez">هزینه از سایرمراکز (ریال)</label>
+                </div>
+                <div class="input-field col m3 s12">
+                    <input disabled id="jame_hazineha" type="number">
+                    <label for="jame_hazineha"></label>
+                </div>
+                <div class="input-field col m12 s12">
+                    <textarea id="tozih_hazine" class="materialize-textarea" data-length="120"></textarea>
+                    <label for="tozih_hazine">توضیحات بیشتر (فقط فارسی)</label>
+                </div>
+                <div class="input-field col m12 s12">
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>File</span>
+                            <input type="file" multiple>
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="ضمیمه طرح اجرا شده در صورت نیاز فرمت های jpg و doc تا ۵ مگابایت -">
+                        </div>
+                    </div>
+                </div>
+                <div class="input-field col m12 s12">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">وضعیت گزارش شما :</span>
+                            <span>تایید</span>
+
+                            <p>توضیحات ستاد:</p>
+                        </div>
+                        <div class="card-action">
+                            <p>لورم ایسپوم یک متن برای پر کردن است.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--content ends-->
+
+
+<script src="node_modules/materialize-css/dist/js/materialize.js"></script>
+<script>
+    M.AutoInit();
+    document.getElementById("men_number").value = 0;
+    document.getElementById("women_number").value = 0;
+
+    function sumMenAndWo() {
+        var menNumber = parseInt(document.getElementById("men_number").value);
+        var womenNumber = parseInt(document.getElementById("women_number").value);
+        console.log(menNumber);
+        console.log(womenNumber);
+        var sumMenAndWomenNumber = menNumber + womenNumber;
+        console.log(sumMenAndWomenNumber);
+        document.getElementById("sum_men_and_women").value = sumMenAndWomenNumber;
+    }
+
+
+</script>
+</body>
+</html>
