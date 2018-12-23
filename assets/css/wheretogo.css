@@ -1,0 +1,10 @@
+body{
+    background: url("../img/background.jpg");
+    font-family: IRANSans, sans-serif;
+}
+.cards-to-choose{
+    margin-top: 70px;
+}
+.card-image-height-custom{
+    max-height: 320px;
+}
